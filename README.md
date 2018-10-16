@@ -72,11 +72,5 @@ App
 * should display a delete button
   * `onClick` the note should be removed from the application state
 
-#### Test
-* Test Dashboard
-  * Test the initial state
-* Test NoteCreateForm
-  * Test the initial state
-
 #### Documentation  
 Write a description of the project in your README.md
