@@ -9,18 +9,31 @@ export default class Dashboard extends React.Component {
     super(props);
 
     this.state = {
-      Notes: [],
-    }
+      notes: [],
+    };
 
     this.addNote = this.addNote.bind(this);
     this.removeNote = this.removeNote.bind(this);
   }
 
-  addNote() {
+  deleteAllNotes(){
+    
+  }
 
+  //Add instance of note to notes state
+  addNote(note) {
+    let notes = this.state.note.push(note);
+
+    this.setState({notes})
   };
 
-  removeNote() {
+  //Remove instance of note from notes state
+  removeNote(note) {
+    let notes = this.state.notes;
+    let noteIndex = note.indexOf(note);
+    notes.splice(noteIndex, 1);
+
+    this.setState({notes});
 
   };
 
@@ -29,9 +42,9 @@ export default class Dashboard extends React.Component {
       <div className="Dashboard">
         <h1>My Dashboard</h1>
         <h2>Add Notes</h2>
-        <NoteForm/>
+        <NoteForm />
         <h2>My Notes</h2>
-        <NoteList/>
+        <NoteList />
       </div>
     );
   };

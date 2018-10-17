@@ -1,4 +1,5 @@
 import React from 'react';
+// import NoteItem from '../components/NoteItem/NoteItem';
 
 export default class NoteList extends React.Component {
 
