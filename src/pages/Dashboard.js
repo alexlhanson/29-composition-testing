@@ -22,15 +22,15 @@ export default class Dashboard extends React.Component {
 
   //Add instance of note to notes state
   addNote(note) {
-    let notes = this.state.note.push(note);
+    this.state.notes.push(note);
 
-    this.setState({notes})
+    this.setState({notes: this.state.notes})
   };
 
   //Remove instance of note from notes state
   removeNote(note) {
     let notes = this.state.notes;
-    let noteIndex = note.indexOf(note);
+    let noteIndex = notes.indexOf(note);
     notes.splice(noteIndex, 1);
 
     this.setState({notes});
@@ -42,9 +42,9 @@ export default class Dashboard extends React.Component {
       <div className="dashboard">
         <h1>My Dashboard</h1>
         <h2>Add Notes</h2>
-        <NoteForm />
+        <NoteForm addNote={this.addNote}/>
         <h2>My Notes</h2>
-        <NoteList />
+        <NoteList destroyNote={this.removeNote} notes={this.state.notes}/>
       </div>
     );
   };

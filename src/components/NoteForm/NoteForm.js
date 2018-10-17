@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Note from '../../models/note';
 export default class NoteForm extends React.Component {
 
   constructor(props){
@@ -11,6 +11,7 @@ export default class NoteForm extends React.Component {
     }
 
     this.handleChange = this.handleChange.bind(this);
+    this.onComplete = this.onComplete.bind(this);
 
   }
 
@@ -20,10 +21,20 @@ export default class NoteForm extends React.Component {
     this.setState({[name]: value})
   }
 
+  //use dashboard's addNote to add Note and creates note based on form input
+  onComplete(e){
+    e.preventDefault();
+
+    let note = new Note(this.state.title, this.state.content);
+    this.props.addNote(note);
+
+    this.setState({title: '', content: ''});
+  }
+
   render() {
     return (
       <div>
-        <form id="create-note-form">
+        <form id="create-note-form" onSubmit={this.onComplete}>
           <label>
             Title:
             <input type="text" name="title" value={this.state.title} placeholder="Note Title" onChange={this.handleChange}/>
