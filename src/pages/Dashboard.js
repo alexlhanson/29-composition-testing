@@ -17,7 +17,7 @@ export default class Dashboard extends React.Component {
   }
 
   deleteAllNotes(){
-    
+
   }
 
   //Add instance of note to notes state
@@ -39,7 +39,7 @@ export default class Dashboard extends React.Component {
 
   render() {
     return (
-      <div className="Dashboard">
+      <div className="dashboard">
         <h1>My Dashboard</h1>
         <h2>Add Notes</h2>
         <NoteForm />
