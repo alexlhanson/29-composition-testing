@@ -6,7 +6,7 @@ export default class Landing extends React.Component {
     return (
       <div>
         <h1>Landing</h1>
-        <p className="App-intro">Welcome to the fantastic, magically, amazing Todo App!</p>
+        <p className="App-intro">Welcome to the fantastic, magically, amazing To-do App!</p>
       </div>
     );
   };

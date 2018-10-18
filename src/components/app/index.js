@@ -1,5 +1,5 @@
 //style
-import './style/main.scss';
+import '../../style/main.scss';
 
 // 3rd party imports
 import React from 'react';
@@ -11,18 +11,8 @@ import {
 } from 'react-router-dom';
 
 // pages
-import Landing from './pages/Landing';
-import Dashboard from './pages/Dashboard';
-
-// class Main extends React.Component{
-//   render() {
-//     return (
-//       <React.Fragment>
-
-//       </React.Fragment>
-//     )
-//   }
-// }
+import Landing from '../landing/index';
+import Dashboard from '../dashboard/index';
 
 class App extends React.Component {
 

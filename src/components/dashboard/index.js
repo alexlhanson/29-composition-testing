@@ -1,6 +1,6 @@
 import React from 'react';
-import NoteForm from '../components/NoteForm/NoteForm';
-import NoteList from '../components/NoteList/NoteList';
+import NoteForm from '../note-create-form/index';
+import NoteList from '../note-list/index';
 
 
 export default class Dashboard extends React.Component {
