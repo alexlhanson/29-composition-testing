@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # React To-Do List
 ===
 
@@ -24,25 +23,8 @@
 - Superagent
 - Babel
 
-### Created by Alex Hanson
-=======
-![cf](http://i.imgur.com/7v5ASc8.png) 29: To Do
-===
-
-## Submission Instructions
-  * Work in a fork of this repository
-  * Work in a branch on your fork
-  * Write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-duncan`
-  * Submit a pull request to this repository
-  * Submit a link to your pull request on canvas
-  * Submit a question, observation, and how long you spent on canvas 
-  
-## Learning Objectives  
-* Students will learn about composition vs inheritance
-* Students will learn to compose react components using props
-
 ## Requirements  
- 
+
 #### Feature Tasks 
 Refactor and add the following components 
 
@@ -76,7 +58,3 @@ App
   * Test the NoteItem's ability to remove a note from the App's state
 * Test NoteUpdateForm
   * Test the NoteUpdatesForm's ability to update a note in the App's state
-
-#### Documentation  
-Write a description of the project in your README.md
->>>>>>> dcc666b8c51c9b91ad4ed0ea63f7610cc3c002f6
