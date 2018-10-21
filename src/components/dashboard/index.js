@@ -15,8 +15,6 @@ export default class Dashboard extends React.Component {
     this.addNote = this.addNote.bind(this);
     this.removeNote = this.removeNote.bind(this);
     this.deleteAllNotes = this.deleteAllNotes(this);
-    // this.editNote = this.editNote.bind(this);
-    // this.cancelEdit = this.cancelEdit.bind(this);
     this.updateNote = this.updateNote.bind(this);
   }
 
@@ -41,20 +39,10 @@ export default class Dashboard extends React.Component {
 
   };
 
-  // editNote(note) {
-  //   const notes = this.state.notes;
-
-  //   note.
-  // }
-
-  // cancelEdit(note) {
-  
-  // }
-
   updateNote(note, title, content) {
     let notes = this.state.notes;
     let noteIndex = notes.indexOf(note);
-
+    
     notes[noteIndex].title = title;
     notes[noteIndex].content = content;
 
@@ -70,8 +58,6 @@ export default class Dashboard extends React.Component {
         <h2>My Notes</h2>
         <NoteList destroyNote={this.removeNote} 
                   notes={this.state.notes} 
-                  // editNote={this.editNote} 
-                  // cancelEdit={this.cancelEdit}
                   updateNote={this.updateNote}/>
       </div>
     );

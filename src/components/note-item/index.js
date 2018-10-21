@@ -34,7 +34,6 @@ export default class NoteItem extends React.Component {
           close={() => this.setState({ isEditing: !this.state.isEditing})} 
           note={this.props.note}
           updateNote={this.props.updateNote}
-          cancelEdit={this.props.cancelEdit}
         />
       )
     }
